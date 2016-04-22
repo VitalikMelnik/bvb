@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <title>[bvblogic]</title>
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="vendor/angular-route/angular-route.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/controllers/cat.js"></script>
+  <script src="js/controllers/root.js"></script>
+  <script src="js/controllers/dog.js"></script>
+  <script src="js/controllers/hourse.js"></script>
+  <script src="js/controllers/submit.js"></script>
+  <script src="js/controllers/modalHelp.js"></script>
+
+</head>
+<body ng-controller="rootController">
+  <ul class="navigation">
+      <li class="nav-item"><a href="#/cat">Cat</a></li>
+      <li class="nav-item"><a href="#/dog">Dog</a></li>
+      <li class="nav-item"><a href="#/horse">Hourse</a></li>
+      <li class="nav-item"><a href="#/submit">Contact us</a></li>
+  </ul>
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+
+  <div class="site-wrap">
+    <div id="navigation" class="btn-group btn-group-justified">
+      <a href="#/cat" class="btn btn-primary">Cat</a>
+      <a href="#/dog" class="btn btn-primary">Dog</a>
+      <a href="#/horse" class="btn btn-primary">Horse</a>
+      <a href="#/submit" class="btn btn-primary">Contact us</a>
+  </div>
+
+   <footer id="footer" >
+     <button type="button" class="btn btn-default" id="help" ng-click="openModalHelp()">Help</button>
+   </footer>
+
+   <div ng-view class="container-fluid text-center bg-grey"></div>
+
+   </div>
+
+</body>
+</html>

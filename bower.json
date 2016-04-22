@@ -1,0 +1,13 @@
+{
+  "name": "frontend_test_app",
+  "description": "test app for [bvblogic]",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-route": "1.4.x",
+    "bootstrap": "^3.3.6",
+    "angular-bootstrap": "^1.3.2"
+  }
+}
